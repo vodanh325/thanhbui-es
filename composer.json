@@ -1,0 +1,30 @@
+{
+    "name": "thanhbui/es-search",
+    "type": "library",
+    "description": "Index Eloquent models to Elasticsearch",
+    "keywords": ["eloquent", "elasticsearch", "elastic", "search", "laravel", "lumen"],
+    "homepage": "https://github.com/vodanh325",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thanh Bui",
+            "email": "thanhbq01@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "elasticsearch/elasticsearch": "~2.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "EloquentEs\\": "src/"
+      }
+    },
+    "extra": {
+      "branch-alias": {
+        "dev-master": "1.0-dev"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
