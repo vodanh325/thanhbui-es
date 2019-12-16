@@ -96,7 +96,7 @@ class Manage
     protected function getConfig($name)
     {
         $connections = $this->app['config']['elastic.connections'];
-        if (is_null($config = array_get($connections, $name))) {
+        if (empty($config = $connections[$name])) {
             throw new \InvalidArgumentException("Elasticsearch connection [$name] not configured.");
         }
         return $config;
